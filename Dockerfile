@@ -2,6 +2,6 @@ FROM alpine:latest
 
 MAINTAINER shcoder.alex@gmail.com
 
-RUN ls
+WORKDIR /var/www
 
-CMD sh
+CMD ls
