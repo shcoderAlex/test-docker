@@ -1,7 +1,5 @@
-FROM alpine:latest
+FROM nginx:alpine
 
 MAINTAINER shcoder.alex@gmail.com
 
-WORKDIR /var/www
-COPY ./ ./
-CMD ls
+COPY ./ /usr/share/nginx/html
